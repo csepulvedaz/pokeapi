@@ -1,23 +1,14 @@
-import { useTranslation } from "react-i18next";
-
-const LANGUAGES = {
-	es: { nativeName: "Español" },
-	en: { nativeName: "English" },
-};
+// Components
+import Header from "components/Header";
+import Content from "components/Content";
 
 function App() {
-	const { t, i18n } = useTranslation();
-
 	return (
-		<div>
-			<div>
-				{Object.keys(LANGUAGES).map((lng) => (
-					<button key={lng} onClick={() => i18n.changeLanguage(lng)} disabled={i18n.resolvedLanguage === lng}>
-						{LANGUAGES[lng].nativeName}
-					</button>
-				))}
+		<div className="w-full h-min bg-gradient-to-r from-violet-100 to-blue-200">
+			<div className="w-full md:w-3/4 m-auto">
+				<Header />
+				<Content />
 			</div>
-			<p>{t("initialization")}</p>
 		</div>
 	);
 }
