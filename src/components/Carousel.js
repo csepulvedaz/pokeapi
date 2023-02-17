@@ -19,7 +19,7 @@ const CustomCarousel = ({ items, species, moves, types }) => {
 				{renderTypes(types, i18n)}
 			</Col>
 			<Col xs={24} xl={12}>
-				<Carousel>
+				<Carousel autoplay>
 					{items?.map((item, i) => (
 						<div key={`${name + "-" + i}`} className="pb-10">
 							<PokemonCard size="text-xl" name={item.artName} url={item.url} alt={`${name + "-" + i}`} width={400} />

@@ -97,7 +97,7 @@ const Content = () => {
 							key={pokemon.name}
 							xs={24}
 							xl={8}
-							className="bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg mb-10 z-0"
+							className="bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg py-10 mb-10 z-0"
 						>
 							<PokemonCard
 								name={pokemon.name}
